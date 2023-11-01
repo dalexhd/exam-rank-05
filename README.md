@@ -7,7 +7,7 @@ This repository contains three C++ module assignments that cover various aspects
 - 📁 **Assignment Directory**: [cpp_module00/](cpp_module00/)
 - 📘 **Assignment Description**: [Read Detailed Assignment Description](cpp_module00/README.md)
 <p align="center">
-  <a href="https://repl.it/@dalexhd/exam-rank-0501" target="_blank">
+  <a href="https://replit.com/@dalexhd/exam-rank-0501-0" target="_blank">
     <img src="https://repl.it/badge/github/dalexhd/exam-rank-05" alt="Repl.it">
   </a>
 </p>
