@@ -1,20 +1,20 @@
-# Warlock Class Assignment
+📝 **C++ Module 00 Assignment**
 
 ## Assignment Details
 
-- **Assignment Name**: cpp_module00
-- **Expected Files**: `Warlock.cpp`, `Warlock.hpp`
+- **Assignment Name**: `cpp_module00`
+- **Expected Files**: 📄 `Warlock.cpp`, 📄 `Warlock.hpp`
 
 ## Assignment Description
 
 Create a C++ `Warlock` class that adheres to Coplien's form, with specific attributes, functions, and behavior.
 
-### Private Attributes
+🔐 **Private Attributes**
 
 The `Warlock` class should include the following private attributes:
 
-- `name` (string)
-- `title` (string)
+- `name` (🔒 string)
+- `title` (🔒 string)
 
 Since these attributes are private, you should implement the following getter functions:
 
@@ -27,11 +27,11 @@ Additionally, you need to implement a setter function:
 
 - `setTitle(const std::string& newTitle)`: Takes a reference to a constant string and returns void.
 
-### Constructor
+🏗️ **Constructor**
 
 In addition to adhering to Coplien's form, the `Warlock` class should have a constructor that takes the `name` and `title` in that order. It should be impossible to copy a `Warlock`, instantiate a `Warlock` by copying, or instantiate a `Warlock` without providing both a name and a title.
 
-### Example:
+**Example**:
 
 ```cpp
 Warlock bob;                            // Does not compile
@@ -55,7 +55,7 @@ When the `Warlock` meets its end, it should utter:
 <NAME>: My job here is done!
 ```
 
-### Introduction Function
+🎭 **Introduction Function**
 
 The `Warlock` must be capable of introducing itself with grandiosity. Create the following function:
 
@@ -65,7 +65,7 @@ The `Warlock` must be capable of introducing itself with grandiosity. Create the
 <NAME>: I am <NAME>, <TITLE>!
 ```
 
-## Example Main Function
+📜 **Example Main Function**
 
 Here's an example of a test main function and its associated output:
 
@@ -87,7 +87,7 @@ int main()
 }
 ```
 
-## Expected Output
+📜 **Expected Output**
 
 When running the main function, the expected output is:
 

@@ -1,48 +1,48 @@
-# C++ Module 02 Assignment
+📝 **C++ Module 02 Assignment**
 
 ## Assignment Details
 
-- **Assignment Name**: cpp_module02
+- **Assignment Name**: `cpp_module02`
 - **Expected Files**:
-  - `Warlock.cpp`, `Warlock.hpp`
-  - `ASpell.cpp`, `ASpell.hpp`
-  - `ATarget.cpp`, `ATarget.hpp`
-  - `Fwoosh.cpp`, `Fwoosh.hpp`
-  - `Dummy.cpp`, `Dummy.hpp`
-  - `Fireball.cpp`, `Fireball.hpp`
-  - `Polymorph.cpp`, `Polymorph.hpp`
-  - `BrickWall.cpp`, `BrickWall.hpp`
-  - `SpellBook.cpp`, `SpellBook.hpp`
-  - `TargetGenerator.cpp`, `TargetGenerator.hpp`
+  - 📄 `Warlock.cpp`, 📄 `Warlock.hpp`
+  - 📄 `ASpell.cpp`, 📄 `ASpell.hpp`
+  - 📄 `ATarget.cpp`, 📄 `ATarget.hpp`
+  - 📄 `Fwoosh.cpp`, 📄 `Fwoosh.hpp`
+  - 📄 `Dummy.cpp`, 📄 `Dummy.hpp`
+  - 📄 `Fireball.cpp`, 📄 `Fireball.hpp`
+  - 📄 `Polymorph.cpp`, 📄 `Polymorph.hpp`
+  - 📄 `BrickWall.cpp`, 📄 `BrickWall.hpp`
+  - 📄 `SpellBook.cpp`, 📄 `SpellBook.hpp`
+  - 📄 `TargetGenerator.cpp`, 📄 `TargetGenerator.hpp`
 
 ## Assignment Description
 
-### Warlock, SpellBook, and TargetGenerator Classes
+🧙 **Warlock, SpellBook, and TargetGenerator Classes**
 
 In the `Warlock`, `SpellBook`, and `TargetGenerator` classes, the use of the switch statement is forbidden.
 
-#### Spells
+📜 **Spells**
 
 Create the following two spells, similar to `Fwoosh`:
 
 1. `Fireball` (Name: "Fireball", Effects: "burnt to a crisp")
 2. `Polymorph` (Name: "Polymorph", Effects: "turned into a critter")
 
-#### New Target Type
+🎯 **New Target Type**
 
 Create a new target type, `BrickWall` (Type: "Inconspicuous Red-brick Wall").
 
-#### SpellBook Class
+📚 **SpellBook Class**
 
 Create a `SpellBook` class in canonical form. It should not be copyable or instantiable by copy. The `SpellBook` class should have the following functions:
 
 - `void learnSpell(ASpell*)`: This function COPIES a spell into the book.
 - `void forgetSpell(const std::string&)`: This function deletes a spell from the book, but only if it exists.
-- `ASpell* createSpell(const std::string&)`: This function receives a string corresponding to the name of a spell, creates it, and returns it.
+- `ASpell* createSpell(const std.string&)`: This function receives a string corresponding to the name of a spell, creates it, and returns it.
 
 Modify the `Warlock` class to include a spell book that is created with the `Warlock` and destroyed with the `Warlock`. Make sure that the `learnSpell` and `forgetSpell` functions of the `Warlock` call those of the spell book.
 
-#### TargetGenerator Class
+🎯 **TargetGenerator Class**
 
 Create a `TargetGenerator` class in canonical form. It should not be copyable. The `TargetGenerator` class should have the following functions:
 
@@ -50,7 +50,7 @@ Create a `TargetGenerator` class in canonical form. It should not be copyable. T
 - `void forgetTargetType(const std::string&)`: This function makes the generator forget a target type if it's known.
 - `ATarget* createTarget(const std::string&)`: This function creates a target of the specified type.
 
-## Test Main and Expected Output
+📜 **Test Main and Expected Output**
 
 Here's a sample test main function and its expected output:
 
@@ -78,7 +78,7 @@ int main()
 }
 ```
 
-### Expected Output
+📜 **Expected Output**
 
 When running the main function, the expected output is:
 
