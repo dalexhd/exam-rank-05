@@ -12,9 +12,6 @@ int main()
   jack->setTitle("the Mighty");
   jack->introduce();
 
-  if (jack->getName() == "Jack")
-    std::cout << "getName is const" << std::endl;
-
   delete jack;
 
   return (0);

@@ -26,6 +26,6 @@ class Warlock {
 		}
 
 		void introduce() const {
-			std::cout << this->getName() << ": I am " << this->getName() << ", " << this->getName() << "!" << std::endl;
+			std::cout << this->getName() << ": I am " << this->getName() << ", " << this->getTitle() << "!" << std::endl;
 		}
 };
