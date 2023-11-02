@@ -4,6 +4,11 @@ class Warlock {
 	private:
 		std::string _name;
 		std::string _title;
+
+		Warlock();
+		Warlock(const Warlock &);
+		Warlock& operator= (const Warlock &);
+
 	public:
 
 		Warlock(std::string const &name, std::string const &title): _name(name), _title(title) {
