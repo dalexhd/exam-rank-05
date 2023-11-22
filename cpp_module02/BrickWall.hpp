@@ -8,10 +8,10 @@ class BrickWall: public ATarget {
 	public:
 		BrickWall(): ATarget("Inconspicuous Red-brick Wall") {};
 
-		ATarget *clone() const {
-			return (new BrickWall());
-		}
+		virtual ~BrickWall() {}
 
-		~BrickWall() {}
+		BrickWall *clone() const {
+			return (new BrickWall(*this));
+		}
 };
 

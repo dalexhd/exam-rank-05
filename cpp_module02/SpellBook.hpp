@@ -5,13 +5,15 @@
 
 #include "ASpell.hpp"
 class SpellBook {
-
 	private:
 		std::map<std::string, ASpell*> __db;
 
+		SpellBook(const SpellBook &obj);
+		SpellBook& operator=(const SpellBook &spell);
+
 	public:
-		SpellBook() {
-		}
+		SpellBook() {}
+		~SpellBook() {}
 
 		void learnSpell(ASpell* spell);
 		void forgetSpell(std::string const &name);
@@ -21,9 +23,6 @@ class SpellBook {
 				return __db[name];
 			}
 			return NULL;
-		}
-
-		~SpellBook() {
 		}
 };
 

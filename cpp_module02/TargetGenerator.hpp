@@ -9,15 +9,15 @@ class TargetGenerator {
 	private:
 		std::map<std::string, ATarget*> __db;
 
+		TargetGenerator(const TargetGenerator &obj);
+		TargetGenerator& operator=(const TargetGenerator &aspell);
+
 	public:
-		TargetGenerator() {
-		}
+		TargetGenerator() {}
+		~TargetGenerator() {}
 
 		void learnTargetType(ATarget* target);
-		void forgetTargetType(std::string const & name);
-		ATarget* createTarget(std::string const &name);
-
-		~TargetGenerator() {
-		}
+		void forgetTargetType(std::string const &type);
+		ATarget* createTarget(std::string const &type);
 };
 

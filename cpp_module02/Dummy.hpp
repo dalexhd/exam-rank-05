@@ -5,17 +5,12 @@
 #include "ATarget.hpp"
 
 class Dummy: public ATarget {
-	private:
-
 	public:
-
 		Dummy(): ATarget("Target Practice Dummy") {}
 
-		~Dummy() {}
+		virtual ~Dummy() {}
 
 		ATarget *clone() const {
 			return (new Dummy());
 		}
 };
-
-

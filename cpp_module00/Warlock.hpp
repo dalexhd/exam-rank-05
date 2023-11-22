@@ -2,16 +2,16 @@
 
 class Warlock {
 	private:
-		std::string _name;
-		std::string _title;
+		std::string name;
+		std::string title;
 
 		Warlock();
-		Warlock(const Warlock &);
-		Warlock& operator= (const Warlock &);
+		Warlock(const Warlock &obj);
+		Warlock& operator=(const Warlock &warlock);
 
 	public:
 
-		Warlock(std::string const &name, std::string const &title): _name(name), _title(title) {
+		Warlock(std::string const &name, std::string const &title): name(name), title(title) {
 			std::cout << this->getName() << ": This looks like another boring day." << std::endl;
 		}
 
@@ -20,14 +20,14 @@ class Warlock {
 		}
 
 		std::string const &getName() const {
-			return _name;
+			return this->name;
 		}
 		std::string const &getTitle() const {
-			return _title;
+			return this->title;
 		}
 
 		void setTitle(std::string const &title) {
-			this->_title = title;
+			this->title = title;
 		}
 
 		void introduce() const {

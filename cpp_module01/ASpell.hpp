@@ -6,22 +6,33 @@ class ATarget;
 
 class ASpell {
 	protected:
-		std::string _name;
-		std::string _effects;
-	private:
+		std::string name;
+		std::string effects;
 
 	public:
-		ASpell(std::string &name, std::string &effects): _name(name),  _effects(effects) {}
+		ASpell();
 
-		ASpell(std::string const &name, std::string const &effects) : _name(name),  _effects(effects) {}
+		ASpell(const ASpell &obj) {
+			*this = obj;
+		}
+
+		ASpell& operator=(const ASpell &aspell) {
+			this->name = aspell.name;
+			this->effects = aspell.effects;
+			return *this;
+		}
+
+		ASpell(std::string const &name, std::string const &effects) : name(name),  effects(effects) {}
 
 		virtual ~ASpell(){};
 
 		std::string const &getName() const {
-			return this->_name;
+			return this->name;
 		};
 
-		std::string const &getEffects() const;
+		std::string const &getEffects() const {
+			return this->effects;
+		}
 
 		virtual ASpell *clone() const = 0;
 

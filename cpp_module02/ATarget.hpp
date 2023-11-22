@@ -6,16 +6,26 @@ class ASpell;
 
 class ATarget {
 	protected:
-		std::string _type;
-	private:
+		std::string type;
 
 	public:
-		ATarget(std::string type): _type(type) {}
+		ATarget();
 
-		~ATarget(){};
+		ATarget(const ATarget &obj) {
+			*this = obj;
+		}
+
+		ATarget& operator=(const ATarget &target) {
+			this->type = target.type;
+			return *this;
+		}
+
+		ATarget(std::string const &type): type(type) {}
+
+		virtual ~ATarget(){};
 
 		std::string const &getType() const {
-			return this->_type;
+			return this->type;
 		};
 
 		virtual ATarget *clone() const = 0;
