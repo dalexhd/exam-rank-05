@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-
 #include "ATarget.hpp"
 
 class BrickWall: public ATarget {
@@ -10,8 +9,7 @@ class BrickWall: public ATarget {
 
 		virtual ~BrickWall() {}
 
-		BrickWall *clone() const {
-			return (new BrickWall(*this));
+		ATarget *clone() const {
+			return (new BrickWall());
 		}
 };
-

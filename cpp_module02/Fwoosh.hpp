@@ -13,4 +13,3 @@ class Fwoosh: public ASpell {
 			return (new Fwoosh());
 		}
 };
-

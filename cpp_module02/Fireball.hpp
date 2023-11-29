@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-
 #include "ASpell.hpp"
 
 class Fireball: public ASpell {
@@ -14,4 +13,3 @@ class Fireball: public ASpell {
 			return (new Fireball());
 		}
 };
-
