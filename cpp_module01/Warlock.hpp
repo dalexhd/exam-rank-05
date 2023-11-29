@@ -25,25 +25,11 @@ class Warlock {
 			std::cout << this->getName() << ": My job here is done!" << std::endl;
 		}
 
-		void learnSpell(ASpell *spell) {
-			if (spell)
-				__db.insert(std::make_pair(spell->getName(), spell->clone()));
-		}
+		void learnSpell(ASpell *spell);
 
-		void forgetSpell(std::string const &name) {
-			std::map<std::string, ASpell *>::iterator it = __db.find(name);
-			if (it != __db.end()) {
-				delete it->second;
-			}
-			__db.erase(name);
-		}
+		void forgetSpell(std::string const &name);
 
-		void launchSpell(std::string const &name, ATarget & atarget) {
-			std::map<std::string, ASpell *>::iterator it = __db.find(name);
-			if (it != __db.end()) {
-				it->second->launch(atarget);
-			}
-		}
+		void launchSpell(std::string const &name, ATarget const &atarget);
 
 		std::string const &getName() const {
 			return this->name;

@@ -13,7 +13,14 @@ class SpellBook {
 
 	public:
 		SpellBook() {}
-		~SpellBook() {}
+		~SpellBook() {
+			std::map<std::string, ASpell *>::iterator it = __db.begin();
+			while (it != __db.end()) {
+				delete it->second;
+				it++;
+			}
+			__db.clear();
+		}
 
 		void learnSpell(ASpell* spell);
 		void forgetSpell(std::string const &name);

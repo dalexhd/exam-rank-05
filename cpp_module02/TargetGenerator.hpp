@@ -14,7 +14,14 @@ class TargetGenerator {
 
 	public:
 		TargetGenerator() {}
-		~TargetGenerator() {}
+		~TargetGenerator() {
+			std::map<std::string, ATarget *>::iterator it = __db.begin();
+			while (it != __db.end()) {
+				delete it->second;
+				it++;
+			}
+			__db.clear();
+		}
 
 		void learnTargetType(ATarget* target);
 		void forgetTargetType(std::string const &type);

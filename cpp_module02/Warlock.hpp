@@ -11,7 +11,6 @@ class Warlock {
 	private:
 		std::string name;
 		std::string title;
-		std::map<std::string, ASpell *> __db;
 		SpellBook __book;
 
 		Warlock();
