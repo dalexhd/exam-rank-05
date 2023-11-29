@@ -22,8 +22,10 @@ class SpellBook {
 			__db.clear();
 		}
 
-		void learnSpell(ASpell* spell);
+		void learnSpell(ASpell *spell);
+
 		void forgetSpell(std::string const &name);
+
 		ASpell* createSpell(std::string const &name) {
 			std::map<std::string, ASpell *>::iterator it = __db.find(name);
 			if (it != __db.end()) {
@@ -32,4 +34,3 @@ class SpellBook {
 			return NULL;
 		}
 };
-
